@@ -1,0 +1,102 @@
+[
+    {
+        "question": "Which of the following is a mutable data type in Python?",
+        "options": [
+            "A) Tuple",
+            "B) String",
+            "C) List",
+            "D) Integer"
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "What is the output of: print(type([]))?",
+        "options": [
+            "A) <class 'tuple'>",
+            "B) <class 'list'>",
+            "C) <class 'dict'>",
+            "D) <class 'set'>"
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "Which method is used to add an element to the end of a list?",
+        "options": [
+            "A) add()",
+            "B) insert()",
+            "C) append()",
+            "D) extend()"
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "What does the 'self' parameter represent in Python class methods?",
+        "options": [
+            "A) The class itself",
+            "B) The instance of the class",
+            "C) A static variable",
+            "D) The parent class"
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "Which of the following is used to handle exceptions in Python?",
+        "options": [
+            "A) try-catch",
+            "B) try-except",
+            "C) catch-finally",
+            "D) handle-error"
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "What is the correct way to create a dictionary in Python?",
+        "options": [
+            "A) dict = []",
+            "B) dict = {}",
+            "C) dict = ()",
+            "D) dict = <>"
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "Which function is used to get the length of a list in Python?",
+        "options": [
+            "A) size()",
+            "B) length()",
+            "C) len()",
+            "D) count()"
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "What is the output of: print(3 * 'Hello')?",
+        "options": [
+            "A) HelloHelloHello",
+            "B) Hello Hello Hello",
+            "C) 3Hello",
+            "D) Error"
+        ],
+        "correct": "A"
+    },
+    {
+        "question": "Which of the following is NOT a valid Python variable name?",
+        "options": [
+            "A) _variable",
+            "B) variable123",
+            "C) 123variable",
+            "D) variable_name"
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "What does the range(5) function return?",
+        "options": [
+            "A) [1, 2, 3, 4, 5]",
+            "B) [0, 1, 2, 3, 4]",
+            "C) [0, 1, 2, 3, 4, 5]",
+            "D) A range object"
+        ],
+        "correct": "D"
+    }
+]

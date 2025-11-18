@@ -1,0 +1,102 @@
+[
+    {
+        "question": "What is the time complexity of binary search in a sorted array?",
+        "options": [
+            "A) O(n)",
+            "B) O(log n)",
+            "C) O(n log n)",
+            "D) O(1)"
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "Which data structure follows LIFO (Last In First Out) principle?",
+        "options": [
+            "A) Queue",
+            "B) Stack",
+            "C) Linked List",
+            "D) Tree"
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "What is the worst-case time complexity of Quick Sort?",
+        "options": [
+            "A) O(n log n)",
+            "B) O(n)",
+            "C) O(n\u00b2)",
+            "D) O(log n)"
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "In which traversal method do we visit the root node first in a binary tree?",
+        "options": [
+            "A) Inorder",
+            "B) Preorder",
+            "C) Postorder",
+            "D) Level order"
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "What is the space complexity of merge sort?",
+        "options": [
+            "A) O(1)",
+            "B) O(log n)",
+            "C) O(n)",
+            "D) O(n\u00b2)"
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "Which of the following is NOT a linear data structure?",
+        "options": [
+            "A) Array",
+            "B) Stack",
+            "C) Queue",
+            "D) Tree"
+        ],
+        "correct": "D"
+    },
+    {
+        "question": "What is the time complexity to insert an element at the beginning of a linked list?",
+        "options": [
+            "A) O(n)",
+            "B) O(log n)",
+            "C) O(1)",
+            "D) O(n log n)"
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "Which algorithm is used to find the shortest path between all pairs of vertices?",
+        "options": [
+            "A) Dijkstra's Algorithm",
+            "B) Floyd-Warshall Algorithm",
+            "C) Bellman-Ford Algorithm",
+            "D) Kruskal's Algorithm"
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "What is the maximum number of nodes at level 'k' in a binary tree?",
+        "options": [
+            "A) 2^k",
+            "B) 2^(k-1)",
+            "C) 2^(k+1)",
+            "D) k\u00b2"
+        ],
+        "correct": "A"
+    },
+    {
+        "question": "Which sorting algorithm has the best average-case time complexity?",
+        "options": [
+            "A) Bubble Sort",
+            "B) Selection Sort",
+            "C) Merge Sort",
+            "D) Insertion Sort"
+        ],
+        "correct": "C"
+    }
+]

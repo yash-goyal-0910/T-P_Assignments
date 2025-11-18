@@ -1,0 +1,102 @@
+[
+    {
+        "question": "What does ACID stand for in database transactions?",
+        "options": [
+            "A) Atomicity, Consistency, Isolation, Durability",
+            "B) Accuracy, Consistency, Integrity, Durability",
+            "C) Atomicity, Correctness, Isolation, Dependency",
+            "D) Accuracy, Correctness, Integrity, Dependency"
+        ],
+        "correct": "A"
+    },
+    {
+        "question": "Which normal form eliminates transitive dependencies?",
+        "options": [
+            "A) 1NF",
+            "B) 2NF",
+            "C) 3NF",
+            "D) BCNF"
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "What is the primary key in a relational database?",
+        "options": [
+            "A) A key that can have null values",
+            "B) A unique identifier for each row in a table",
+            "C) A key that can have duplicate values",
+            "D) A foreign key reference"
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "Which SQL command is used to remove a table from the database?",
+        "options": [
+            "A) DELETE",
+            "B) DROP",
+            "C) REMOVE",
+            "D) TRUNCATE"
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "What is a foreign key?",
+        "options": [
+            "A) A key from another database",
+            "B) A key that references the primary key of another table",
+            "C) A key that cannot be null",
+            "D) A unique key in the same table"
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "Which of the following is NOT a type of database model?",
+        "options": [
+            "A) Hierarchical",
+            "B) Network",
+            "C) Relational",
+            "D) Sequential"
+        ],
+        "correct": "D"
+    },
+    {
+        "question": "What does the GROUP BY clause do in SQL?",
+        "options": [
+            "A) Sorts the result set",
+            "B) Filters rows based on conditions",
+            "C) Groups rows with same values",
+            "D) Joins multiple tables"
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "Which isolation level prevents dirty reads but allows phantom reads?",
+        "options": [
+            "A) Read Uncommitted",
+            "B) Read Committed",
+            "C) Repeatable Read",
+            "D) Serializable"
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "What is deadlock in database systems?",
+        "options": [
+            "A) When a transaction takes too long to complete",
+            "B) When two or more transactions wait for each other indefinitely",
+            "C) When a database crashes",
+            "D) When a table is locked permanently"
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "Which SQL function returns the number of rows in a result set?",
+        "options": [
+            "A) SUM()",
+            "B) AVG()",
+            "C) COUNT()",
+            "D) MAX()"
+        ],
+        "correct": "C"
+    }
+]
