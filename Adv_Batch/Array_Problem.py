@@ -37,5 +37,30 @@ def scnd_max(arr):
     return n
 
 #Q5
-def c_freq(arr)
-print(scnd_max([1,23,4,5,4]))
+def c_freq(arr):
+    di = {}
+    for x in arr:
+        if x in di:
+            di[x] += 1
+        else:
+            di[x] = 1
+    return di
+
+#Q6
+def sorte(arr):
+    for i in range(1,len(arr)):
+        if arr[i-1] > arr[i]:
+            return False
+    return True
+
+#Q7
+def rotate(arr,k):
+    for x in range(k):
+        arr.insert(0,arr.pop())
+    return arr
+
+#Q8
+def two_sum(arr,tar):
+    for i,x in enumerate(arr):
+        
+print(rotate([1,2,3,4,5],2))
