@@ -223,5 +223,51 @@ def majority(arr):
             max_v = x[1]
             max_k = x[0]
     return max_k if max_v > len(arr)/2 else None
-print(majority([4,4,4,5,8]))
+
+#Q26
+def peak(arr):
+    n = len(arr) - 1
+    for i,x in enumerate(arr):
+        if i == 0:
+            if arr[i] > arr[i+1]:
+                return arr[i]
+        if i == n:
+            if arr[n] > arr[n-1]:
+                return arr[n]
+        if arr[i] > arr[i-1] and arr[i] > arr[i+1]:
+            return arr[i]
+    return None
+
+#Q27
+#to be done
+
+#Q28
+def n_sort(arr):
+    ls = [0]*3
+    for x in arr:
+        ls[x] += 1
+    arr = [0]*ls[0]
+    arr.extend([1]*ls[1])
+    arr.extend([2]*ls[2])
+    return arr
+
+#Q29
+
+#Q30
+def n_array(arr):
+    res = []
+    for i,x in enumerate(arr):
+        prod = 1
+        for j,y in enumerate(arr):
+            if i == j:
+                continue
+            prod *= y
+        res.append(prod)
+    return res
+
+#Q31
+def equili(arr):
+    left_equili
+    
+print(n_array([1,1,1,1,2,2,2,2,2,10,11,4,5,2,3,4]))
 
