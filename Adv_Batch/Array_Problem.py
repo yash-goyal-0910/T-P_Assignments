@@ -62,5 +62,166 @@ def rotate(arr,k):
 #Q8
 def two_sum(arr,tar):
     for i,x in enumerate(arr):
-        
-print(rotate([1,2,3,4,5],2))
+        for y in arr[i+1::]:
+            if x + y == tar:
+                return (x,y)
+    return 
+
+#Q9
+def rm_dupli(arr):
+    ls = []
+    for x in arr:
+        if x in ls:
+            continue
+        else:
+            ls.append(x)
+    return ls
+
+#Q10
+def merge(arr1,arr2):
+    i = 0
+    j = 0
+    res = []
+    while arr1 and arr2:
+        if arr1[0] < arr2[0]:
+            res.append(arr1.pop(0))
+        else:
+            res.append(arr2.pop(0))
+    while arr1:
+        res.append(arr1.pop(0))
+    while arr2:
+        res.append(arr2.pop(0))
+    return res
+
+#Q11
+def rm(arr,ele):
+    arr.remove(ele)
+    return arr
+
+#Q12
+def find_mis(arr,n):
+    ls = [0] * n
+    ans = []
+    for x in arr:
+        ls[x-1] = 1
+    for i,x in enumerate(ls):
+        if x == 0:
+            ans.append(i+1)
+    return ans
+
+#Q13
+def find_dupli(arr):
+    temp = set()
+    temp2 = set()
+    for x in arr:
+        if x in temp:
+            temp2.add(x)
+        else:
+            temp.add(x)
+    return temp2
+
+#Q14
+def inter(arr1,arr2):
+    arr1 = set(arr1)
+    arr2 = set(arr2)
+    return arr1.intersection(arr2)
+
+#Q15
+def uni(arr1,arr2):
+    arr1 = set(arr1)
+    arr2 = set(arr2)
+    return arr1.union(arr2)
+
+#Q16
+def equi(arr1,arr2):
+    arr1 = sorted(arr1)
+    arr2 = sorted(arr2)
+    n = len(arr1)
+    if len(arr2) != n:
+        return False
+    else:
+        for x in range(n):
+            if arr1[i] != arr2[i]:
+                return False
+        return True
+
+#Q17
+def leader(arr):
+    for i,x in enumerate(arr[:-1:]):
+        found = True
+        for y in arr[i+1::]:
+            if x < y:
+                found = False
+                break
+        if found:
+            return x
+    return None
+
+#Q18
+def move_zero(arr):
+    i = 0
+    n = len(arr)
+    while i < n:
+        if arr[i] == 0:
+            arr.append(arr.pop(i))
+            n -= 1
+        else:
+            i += 1
+    return arr
+
+#Q19
+def f_sub(arr,sum):
+    arr = sorted(arr)
+# to be done
+
+#Q20
+def rotate_lef(arr,k):
+    for x in range(k):
+        arr.insert(len(arr)-1,arr.pop(0))
+    return arr
+
+#Q21
+def find_kth_smallest(arr,k):
+    arr = sorted(arr)
+    return arr[k-1]
+
+#Q22
+def all_subarrya(arr):
+    return
+# to be done
+
+#Q23
+
+#Q24
+def rearrage_alt(arr):
+    arr = sorted(arr)
+    alt = True
+    n = len(arr)
+    i = 0
+    while i < n:
+        if alt:
+            alt = False
+            arr.insert(i,arr.pop())
+            i += 1
+        else:
+            alt = True
+            i += 1
+    return arr
+
+#Q25
+def majority(arr):
+    dic = {}
+    for x in arr:
+        if x in dic:
+            dic[x] += 1
+        else:
+            dic[x] = 1
+    max_v = 0
+    max_k = 0
+    for x in dic.items():
+        if max_v < x[1]:
+            max_v = x[1]
+            max_k = x[0]
+    return max_k if max_v > len(arr)/2 else None
+print(majority([4,4,4,5,8]))
+
