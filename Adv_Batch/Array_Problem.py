@@ -170,9 +170,19 @@ def move_zero(arr):
     return arr
 
 #Q19
-def f_sub(arr,sum):
-    arr = sorted(arr)
-# to be done
+def f_sub(arr,tar):
+    hash = []
+    sum = 0
+    for i,x in enumerate(arr):
+        sum += x
+        temp = sum - tar
+        if temp in hash:
+            j = hash.index(temp)
+            return arr[j+1:i+1] 
+        else:
+            hash.append(sum)
+    return 'not found'
+#print(f_sub([1,2,-2,3,4,3,-11],10))
 
 #Q20
 def rotate_lef(arr,k):
@@ -187,10 +197,25 @@ def find_kth_smallest(arr,k):
 
 #Q22
 def all_subarrya(arr):
-    return
-# to be done
+    ls = [[],arr]
+    for i in range(1,len(arr)):
+        sub = []
+        x = len(arr)+1-i
+        for j in range(x):
+            sub.append(arr[0+j:i+j])
+        ls.extend(sub)
+    return ls
+#print(all_subarrya([1,2,3,4,5,6]))
 
 #Q23
+def kadanes(arr):
+    sum = 0
+    best = 0
+    for x in arr:
+        sum = max(x,sum+x)
+        best = max(best,sum)
+    return best
+#print(kadanes([-1,2,4,-3,5,2,-5,2]))
 
 #Q24
 def rearrage_alt(arr):
@@ -239,7 +264,10 @@ def peak(arr):
     return None
 
 #Q27
-#to be done
+def first_missing_positive(arr):
+    arr = sorted(arr):
+    for x in arr:
+        pass
 
 #Q28
 def n_sort(arr):
@@ -267,7 +295,7 @@ def n_array(arr):
 
 #Q31
 def equili(arr):
-    left_equili
+    pass
     
-print(n_array([1,1,1,1,2,2,2,2,2,10,11,4,5,2,3,4]))
+#print(n_array([1,1,1,1,2,2,2,2,2,10,11,4,5,2,3,4]))
 
