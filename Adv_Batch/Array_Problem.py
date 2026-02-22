@@ -265,9 +265,16 @@ def peak(arr):
 
 #Q27
 def first_missing_positive(arr):
-    arr = sorted(arr):
+    arr = sorted(arr)
+    y = 1
     for x in arr:
-        pass
+        if x <= 0:
+            continue
+        if x == y:
+            y += 1
+        else:
+            return y
+#print(first_missing_positive([-3,-5,1,2,3,5,-2,0]))
 
 #Q28
 def n_sort(arr):
@@ -295,7 +302,18 @@ def n_array(arr):
 
 #Q31
 def equili(arr):
-    pass
-    
-#print(n_array([1,1,1,1,2,2,2,2,2,10,11,4,5,2,3,4]))
+    sum_r = 0
+    sum_l = 0
+    prev = 0
+    for x in arr:
+        sum_r += x
+    for i,x in enumerate(arr):
+        sum_l += prev
+        sum_r -= x
+        prev = x
+        if sum_l == sum_r:
+            return i
+    return None
+
+print(equili([1,1,1,1,2,2,2,2,2,10,11,4,5,2,3,4,4,2]))
 
