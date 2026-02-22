@@ -140,7 +140,7 @@ def equi(arr1,arr2):
     if len(arr2) != n:
         return False
     else:
-        for x in range(n):
+        for i in range(n):
             if arr1[i] != arr2[i]:
                 return False
         return True
